@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pseudo-Selectors</title>
+	<style type="text/css">
+		/*To remove the bullets from the list*/
+		header li{
+			list-style: none;
+		}
+
+		a:link,a:visited{
+			text-decoration: none;
+			background-color: blue;
+			display: block;
+			border:1px solid blue;
+			color: black;
+			width: 150px;
+			margin-bottom: 1px;
+			text-align: center;
+           }
+
+         a:hover,a:active{
+         	background-color: deeppink;
+         	color:purple;
+         }
+
+         header li:nth-child(odd) a{
+         	background-color:cyan;
+
+         }
+
+         a:nth-child(odd):hover {
+         	background-color: deeppink;
+         }
+
+	</style>
+</head>
+<body>
+	<header>
+		<h1>This is simple demonstration of different ways of using Pseudo-Selectors</h1>
+		<ol>
+
+			<li><a href="https://www.facebook.com/" target="_blank">Sambar</a></li>
+			<li><a href="https://www.facebook.com/" target="_blank">Idli</a></li>
+			<li><a href="https://www.facebook.com/" target="_blank">Mysore Bonda</a></li>
+			<li><a href="https://www.facebook.com/" target="_blank">Cashew Bonda</a></li>
+			<li><a href="https://www.facebook.com/" target="_blank">Pesarattu Upma</a></li>
+			<li><a href="https://www.facebook.com/" target="_blank">Cornflakes</a></li>
+			<li><a href="https://www.facebook.com/" target="_blank">Thai curry</a></li>
+			<li><a href="https://www.facebook.com/" target="_blank">Parmesan Garlic</a></li>
+			<li><a href="https://www.facebook.com/" target="_blank">Honey BBQ</a></li>
+			<li><a href="https://www.facebook.com/" target="_blank">Pappu Charu</a></li>
+		</ol>
+	</header>
+</body>
+</html>
