@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Demonstration of Background property</title>
+
+	<style type="text/css">
+		#original{
+
+			background-color: blue;
+			background-image: url('Catalina.jpg') ;
+			background-repeat: no-repeat;
+			background-position: center;
+			width:500px;
+			height:500px;
+        }
+
+        #fake{
+             width:500px;
+             height: 500px;
+        	background : blue url('Catalina.jpg') no-repeat center ;
+        }
+	</style>
+</head>
+<body>
+	<h2>Demonstration of background property</h2>
+
+	<div id='original'>
+		This is the demonstration of using background property without comibining
+	</div>
+	<br>
+	<div id='fake'>
+		This is the demonstration of using background property by combining
+	</div>
+</body>
+</html>
