@@ -1,0 +1,141 @@
+*{
+	box-sizing: border-box;
+}
+html{
+	font-family: Garamond;
+}
+
+h1{
+	text-align: center;
+}
+
+/*****************************Base Styling****************************/
+
+#d1{
+	
+	border: 1px solid black;
+	background-color: gray;
+	margin-bottom: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+
+}
+
+#d2{
+	
+	border: 1px solid black;
+	background-color: gray;
+	margin-bottom: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+
+}
+
+#d3{
+	
+	border: 1px solid black;
+	background-color: gray;
+	margin-bottom: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+
+}
+
+
+.one{
+	float: right;
+	background-color: pink;
+	border: 1px solid black;
+	margin-top: 0px;
+	padding-left: 20px;
+	padding-right: 20px;
+	
+}
+
+#p2{
+
+	color: white;
+	background-color: red;
+
+}
+
+#p3{
+	background-color: yellow;
+}
+
+p{
+	clear:right;
+	margin-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	width: 100%;
+}
+
+.row{
+	width: 100%;
+	
+
+}
+
+/*******************************Desktop layout************************************/
+
+@media(min-width: 992px){
+#d1{
+    float: left;
+    width:31%;
+    
+}
+
+#d2{
+    float: left;
+    width: 31%;
+   
+}
+#d3{
+    float: left;
+    width: 31%;
+
+}
+
+}
+/*******************************Tablet layout************************************/
+
+@media (min-width: 768px) and (max-width: 991px){
+
+	#d1{
+		float: left;
+		width: 45%;
+	}
+
+	#d2{
+		float: right;
+		width: 45%
+	}
+
+	#d3{
+		float: left;
+		width: 100%;
+	}
+
+}
+
+/******************************Mobile layout**************************************/
+
+@media(max-width: 767px){
+
+	#d1{
+		width: 100%;
+	}
+
+	#d2{
+		width: 100%;
+	}
+
+	#d3{
+		width: 100%;
+	}
+
+
+}
+
+
