@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Absolute element positioning in html</title>
+	<style type="text/css">
+		p{
+			border: 2px solid black;
+			width: 60px;
+			height: 60px;
+		}
+		*{
+			box-sizing: border-box;
+		}
+		#one{
+			background-color: green;
+			position: relative;
+			bottom:10px;
+			right: 10px;
+		}
+		#two{
+			background-color: blue;
+			position: absolute;
+			bottom: -10px;
+			right: -10px;
+		}
+		#three{
+			background-color: pink;
+			position: absolute;
+			top: 0px;
+			right: 0px;
+			margin-top: 0;
+		}
+		#four{
+			background-color: maroon;
+		}
+		div{
+			background-color: purple;
+			position: relative;
+		}
+
+		
+	</style>
+</head>
+<body>
+	<h2 >Demonstration of Absolute Positioning in html</h2>
+
+	<div>
+		<p id = one></p>
+		<p id = two></p>
+		<p id = three></p>
+		<p id = four></p>
+	</div>
+	<!---When you have applied same style to the p1 with relative positioning 
+	and p2 with the absolute positioning the p1 has moved relative to its own position
+	and p2 has moved relative to div tag which has relative position---->
+
+</body>
+</html>
