@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="angular.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <meta charset="utf-8">
+    <title>Demonstration of filter</title>
+  </head>
+  <body ng-app="Minification">
+    <h1>Demonstration of filter (protecting dependency injection from minification)</h1>
+
+    <div ng-controller="MinController">
+      Your name:
+        <input ng-model="name" ng-blur="upper()">
+
+    </div>
+  </body>
+</html>

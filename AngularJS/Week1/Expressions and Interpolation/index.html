@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="angular.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body ng-app="ExpAInter">
+    <h1>Expressions and Interpolation</h1>
+    <div ng-controller="Working">
+      <div>
+        <button ng-click="feedYaakov()">Feed me!</button>
+      </div>
+      <div>
+        <img ng-src="images/yaakov_{{stateOfFood}}.png">
+      </div>
+
+    </div>
+
+  </body>
+</html>
