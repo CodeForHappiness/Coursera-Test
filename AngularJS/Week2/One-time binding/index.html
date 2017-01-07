@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app = "OneTimeBindingApp">
+  <head>
+    <script src="angular.min.js"></script>
+    <script src="script.js"></script>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+
+  <body ng-controller = "OneTimeBindingController">
+      <h1>Demonstration of One time Binding</h1>
+    <div>
+      <button ng-click="numOfWatchers()">Number of Watchers</button><br><br>
+      <button ng-click="setFullName()">Set Full name</button><br><br>
+
+      FullName is : {{ ::fullName }}<br><br>
+
+      <button ng-click="logFirstName()">Firstname</button><br><br>
+      <button ng-click="logFullName()">Fullname</button><br><br>
+
+      <input ng-model="firstName">
+    </div>
+
+  </body>
+</html>
