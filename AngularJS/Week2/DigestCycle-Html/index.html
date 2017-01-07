@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="WatcherApp">
+  <head>
+    <script src="angular.min.js"></script>
+    <script src="script.js"></script>
+    <meta charset="utf-8">
+    <title>Demonstration of watchers in html and digest cycle</title>
+  </head>
+  <body ng-controller="WatcherController">
+    <h1>Digest cycle and watchers in html</h1>
+
+    <div >
+      <button ng-click="incValue()">Increment</button><br><br>
+      <button ng-click="numWatchers()">Number of Watchers</button>
+      Setting up a watcher on Value : {{value}}
+    </div>
+  </body>
+</html>

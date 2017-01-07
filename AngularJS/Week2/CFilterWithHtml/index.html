@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html ng-app="CustomFilterApp">
+  <head>
+    <script src="angular.min.js"></script>
+    <script src="script.js"></script>
+    <meta charset="utf-8">
+    <title>Demonstration of customFilter and usage through Javascript</title>
+  </head>
+  <body ng-controller="CustFilterController">
+    Loves:{{sayMessage()}}<br>
+    Truth:{{sayMessage() | custom : 'Appu' : 'Nishi'}}<br>
+    BIG TRUTH : {{sayMessage() | custom : 'Appu' : 'Nishi' | uppercase}}
+  </body>
+</html>
