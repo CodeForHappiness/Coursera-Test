@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app = "NgrepeatApp">
+  <head>
+    <script src="angular.min.js"></script>
+    <script src="script.js"></script>
+    <meta charset="utf-8">
+    <title>Demonstration of ng-repeat</title>
+  </head>
+  <body ng-controller="NgrepeatController">
+    <h1>Demonstration of ng-repeat</h1>
+    <div>
+      <h3>Shopping List</h3>
+      <!-- <ul>
+        <li ng-repeat="item in shoppingList1">{{$index+1}}.{{item}}</li>
+      </ul> -->
+      <input ng-model="shoppingList2[0].quantity">
+      <ul>
+        <li ng-repeat="item in shoppingList2">{{$index+1}}. {{item.name}} and the quantity is
+          {{item.quantity}}</li>
+      </ul>
+
+      <!-- Adding new item to the list -->
+      New item name : <input ng-model="newItemName">
+      New item Quantity : <input ng-model="newItemQuantity"><br><br>
+      <button ng-click="addItemToList()">Add Item</button>
+    </div>
+  </body>
+</html>
