@@ -13,9 +13,11 @@
       <!-- <ul>
         <li ng-repeat="item in shoppingList1">{{$index+1}}.{{item}}</li>
       </ul> -->
-      <input ng-model="shoppingList2[0].quantity">
+      <input ng-model="shoppingList2[0].quantity"><br>
+      Search :
+      <input ng-model="search">
       <ul>
-        <li ng-repeat="item in shoppingList2">{{$index+1}}. {{item.name}} and the quantity is
+        <li ng-repeat="item in shoppingList2 | filter : search">{{$index+1}}. {{item.name}} and the quantity is
           {{item.quantity}}</li>
       </ul>
 

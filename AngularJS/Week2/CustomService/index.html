@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="CustomServiceController">
+  <head>
+    <meta charset="utf-8">
+    <script src="angular.min.js"> </script>
+    <script src="app.js"></script>
+    <title>Demonstration of CustomService</title>
+  </head>
+  <body>
+    <div ng-controller="AddItem as itemAdder">
+      <input ng-model="itemAdder.addName">
+      <input ng-model="itemAdder.addQuantity">
+      <button ng-click="itemAdder.addItem()">Add Item</button>
+    </div>
+    <div ng-controller="ShowItem as showItem">
+      <ol>
+        <li ng-repeat="item in showItem.items">
+          {{item.name}} AND {{item.quantity}} <button ng-click="showItem.remove($index)">Remove Item</button>
+        </li>
+      </ol>
+    </div>
+
+  </body>
+</html>

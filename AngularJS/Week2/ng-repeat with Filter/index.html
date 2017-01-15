@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="FilterApp">
+  <head>
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <meta charset="utf-8">
+    <title>Demonstration of ng-repeat using filter</title>
+  </head>
+  <body ng-controller="FilterController">
+    <h1>Demonstration of ng-repeat using filter</h1>
+
+    <div >
+      <ul>
+        <li ng-repeat="item in shoppingList">{{$index+1}}. {{item}}</li>
+      </ul>
+    </div>
+
+  </body>
+</html>

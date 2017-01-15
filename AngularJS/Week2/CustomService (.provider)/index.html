@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="ProviderApp">
+  <head>
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Demonstration of (.provider) method with custom service</h1>
+
+    <div ng-controller = "ProviderController as provide">
+      Name : <input ng-model = "provide.itemName">
+      Quantity : <input ng-model="provide.itemQuantity">
+      <button ng-click="provide.addItem()">Add Item</button>
+      <ol>
+        <li ng-repeat="item in provide.items">{{item.name}} of {{item.quantity}}</li>
+      </ol>
+    </div>
+  </body>
+</html>
