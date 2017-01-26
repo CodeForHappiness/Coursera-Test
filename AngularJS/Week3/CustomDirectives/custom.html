@@ -1,0 +1,6 @@
+Name : <input ng-model="list.itemName">
+Quantity : <input ng-model="list.itemQuantity">
+<button ng-click="list.addItem()">Add Item in Shoppinglist</button>
+<ul>
+  <li ng-repeat="item in list.items"><watch-item></watch-item></li>
+</ul>
