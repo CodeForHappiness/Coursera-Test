@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="FactoryApp">
+  <head>
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <meta charset="utf-8">
+    <title>Demonstration of Custom Service using .factory method</title>
+  </head>
+  <body>
+    <h1>Custom Service using Factory</h1>
+    <!--Unlimited Item in a Shopping List  -->
+    <div  ng-controller = "FactoryController1 as list">
+      Name : <input ng-model="list.itemQuantity">
+      Quantity : <input ng-model="list.itemName">
+      <button ng-click="list.addItem()">Add Item in Shoppinglist</button>
+      <shop-list  items="list.items" title="{{list.title}}"></shop-list>
+    </div>
+  </body>
+</html>

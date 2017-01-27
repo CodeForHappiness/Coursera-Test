@@ -1,0 +1,7 @@
+<h3>{{listDirective.title}}</h3>
+<ul>
+  <li ng-repeat="item in listDirective.items">{{item.name}} of {{item.quantity}}</li>
+</ul>
+<div class="error" ng-if="listDirective.isCookieTrue()">
+  WARNING!!WARNING!!COOKIES DETECTED!
+</div>
