@@ -1,0 +1,23 @@
+<ul id="list">
+  <li ng-if="items.length != 0"
+    ng-repeat="item in items">Name : {{item.name}} ,
+                                Short Name : {{item.short_name}} ,
+                                Description : {{item.description}}
+    <button ng-click="onRemove({index:$index});">Don't want this one!</button>
+  </li>
+  <li ng-if="items.length == 0">"Nothing found!"</li>
+</ul>
+
+
+
+
+<!-- <ul>
+<li ng-if="narrow.categories.length != 0"
+    ng-repeat="item in narrow.categories">Name : {{item.name}} ,
+                                Short Name : {{item.short_name}} ,
+                                Description : {{item.description}}
+    <button ng-click="narrow.removeFromList($index)">Don't want this one!</button>
+  </li>
+<li ng-if="narrow.categories.length == 0">"Nothing found!"</li>
+
+</ul> -->
